@@ -12,7 +12,7 @@ $wechatpay_config = require('config.php');
 
 //①、获取用户openid
 try{
-    $tools = new \WeChatPay\JsApiTool($wechatpay_config['appid'], $wechatpay_config['appsecret']);
+    $tools = new \tinymeng\WeChatPay\JsApiTool($wechatpay_config['appid'], $wechatpay_config['appsecret']);
     $openid = $tools->GetOpenid();
 }catch(Exception $e){
     echo $e->getMessage();
@@ -38,7 +38,7 @@ $params = [
 
 //发起支付请求
 try {
-    $client = new \WeChatPay\V3\PaymentService($wechatpay_config);
+    $client = new \tinymeng\WeChatPay\V3\PaymentService($wechatpay_config);
     $result = $client->jsapiPay($params);
     $jsApiParameters = json_encode($result);
 } catch (Exception $e) {

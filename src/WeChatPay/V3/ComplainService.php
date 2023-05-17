@@ -1,6 +1,6 @@
 <?php
 
-namespace WeChatPay\V3;
+namespace tinymeng\WeChatPay\V3;
 
 /**
  * 消费者投诉服务类

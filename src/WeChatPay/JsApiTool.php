@@ -1,6 +1,6 @@
 <?php
 
-namespace WeChatPay;
+namespace tinymeng\WeChatPay;
 
 /**
  * JSAPI支付工具类

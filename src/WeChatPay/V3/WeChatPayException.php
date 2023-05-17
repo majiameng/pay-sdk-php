@@ -1,6 +1,6 @@
 <?php
 
-namespace WeChatPay\V3;
+namespace tinymeng\WeChatPay\V3;
 
 /**
  * 微信支付响应内容异常

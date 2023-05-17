@@ -19,7 +19,7 @@ $params = [
 
 //发起退款请求
 try {
-    $client = new \WeChatPay\PaymentService($wechatpay_config);
+    $client = new \tinymeng\WeChatPay\PaymentService($wechatpay_config);
     $result = $client->refund($params);
     echo '退款成功！退款金额：'.$result['refund_fee'];
 } catch (Exception $e) {
