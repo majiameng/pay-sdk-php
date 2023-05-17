@@ -22,7 +22,7 @@ $bizContent = [
 
 //发起支付请求
 try{
-    $aop = new \tinymeng\Alipay\AlipayTradeService($alipay_config);
+    $aop = new \tinymeng\pay\Alipay\AlipayTradeService($alipay_config);
     $result = $aop->qrPay($bizContent);
     echo '支付宝下单成功！支付二维码链接：'.$result['qr_code'];
 }catch(Exception $e){

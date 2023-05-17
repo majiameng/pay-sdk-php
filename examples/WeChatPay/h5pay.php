@@ -33,7 +33,7 @@ $redirect_url = $hostInfo.dirname($_SERVER['SCRIPT_NAME']).'/return.php';
 
 //发起支付请求
 try {
-    $client = new \tinymeng\WeChatPay\PaymentService($wechatpay_config);
+    $client = new \tinymeng\pay\WeChatPay\PaymentService($wechatpay_config);
     $result = $client->h5Pay($params);
     
     //H5支付跳转地址

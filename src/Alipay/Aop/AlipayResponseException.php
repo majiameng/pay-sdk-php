@@ -1,6 +1,6 @@
 <?php
 
-namespace tinymeng\Alipay\Aop;
+namespace tinymeng\pay\Alipay\Aop;
 
 class AlipayResponseException extends \Exception
 {

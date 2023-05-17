@@ -23,7 +23,7 @@ $bizContent = [
 
 //发起支付请求
 try{
-    $aop = new \tinymeng\Alipay\AlipayTradeService($alipay_config);
+    $aop = new \tinymeng\pay\Alipay\AlipayTradeService($alipay_config);
     //$aop->directPayParams($bizContent); //互联网平台直付通补充业务参数
     if(preg_match('/(android|iphone|ipod|windows phone)/i', $_SERVER['HTTP_USER_AGENT'])){ //判断UA为手机浏览器
         $html = $aop->wapPay($bizContent);

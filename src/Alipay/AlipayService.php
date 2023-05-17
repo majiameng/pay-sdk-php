@@ -1,11 +1,11 @@
 <?php
 
-namespace tinymeng\Alipay;
+namespace tinymeng\pay\Alipay;
 
-use tinymeng\Alipay\Aop\AopClient;
-use tinymeng\Alipay\Aop\AlipayCertHelper;
-use tinymeng\Alipay\Aop\AlipayRequest;
-use tinymeng\Alipay\Aop\AlipayResponseException;
+use tinymeng\pay\Alipay\Aop\AopClient;
+use tinymeng\pay\Alipay\Aop\AlipayCertHelper;
+use tinymeng\pay\Alipay\Aop\AlipayRequest;
+use tinymeng\pay\Alipay\Aop\AlipayResponseException;
 
 class AlipayService
 {

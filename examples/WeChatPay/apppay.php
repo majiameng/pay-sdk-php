@@ -21,7 +21,7 @@ $params = [
 
 //发起支付请求
 try {
-    $client = new \tinymeng\WeChatPay\PaymentService($wechatpay_config);
+    $client = new \tinymeng\pay\WeChatPay\PaymentService($wechatpay_config);
     $result = $client->appPay($params);
     print_r($result);
 } catch (Exception $e) {

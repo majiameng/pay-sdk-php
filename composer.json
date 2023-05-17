@@ -20,9 +20,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"tinymeng\\Alipay\\": "src/Alipay/",
-			"tinymeng\\QQPay\\": "src/QQPay/",
-			"tinymeng\\WeChatPay\\": "src/WeChatPay/"
+			"tinymeng\\pay\\": "src/"
 		}
 	}
 }

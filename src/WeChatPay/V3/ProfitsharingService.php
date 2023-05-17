@@ -1,6 +1,6 @@
 <?php
 
-namespace tinymeng\WeChatPay\V3;
+namespace tinymeng\pay\WeChatPay\V3;
 
 /**
  * 分账服务类

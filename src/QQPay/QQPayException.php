@@ -1,6 +1,6 @@
 <?php
 
-namespace tinymeng\QQPay;
+namespace tinymeng\pay\QQPay;
 
 /**
  * QQ钱包支付响应内容异常

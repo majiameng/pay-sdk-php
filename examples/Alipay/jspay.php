@@ -14,7 +14,7 @@ $alipay_config = require('config.php');
 //支付宝快捷登录并获取openid
 $redirect_uri = $hostInfo.$_SERVER['REQUEST_URI'];
 try{
-    $oauth = new \tinymeng\Alipay\AlipayOauthService($alipay_config);
+    $oauth = new \tinymeng\pay\Alipay\AlipayOauthService($alipay_config);
     if(isset($_GET['auth_code'])){
         $result = $oauth->getToken($_GET['auth_code']);
         $openid = $result['user_id'];
@@ -38,7 +38,7 @@ $bizContent = [
 
 //发起支付请求
 try{
-    $aop = new \tinymeng\Alipay\AlipayTradeService($alipay_config);
+    $aop = new \tinymeng\pay\Alipay\AlipayTradeService($alipay_config);
     $result = $aop->qrPay($bizContent);
     $alipay_trade_no = $result['trade_no'];
 }catch(Exception $e){

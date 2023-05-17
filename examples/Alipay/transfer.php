@@ -20,7 +20,7 @@ else $is_userid = false;
 
 //发起转账请求
 try{
-    $transfer = new \tinymeng\Alipay\AlipayTransferService($alipay_config);
+    $transfer = new \tinymeng\pay\Alipay\AlipayTransferService($alipay_config);
 	$result = $transfer->transferToAccount($out_trade_no, $money, $is_userid, $payee_account, $payee_real_name, $payer_show_name);
     echo '转账成功！支付宝转账订单号：'.$result['order_id'].' 转账时间：'.$result['trans_date'];
 }catch(Exception $e){

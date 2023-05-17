@@ -9,7 +9,7 @@ require __DIR__ . '/../../vendor/autoload.php';
 //引入配置文件
 $wechatpay_config = require('config.php');
 
-$client = new \tinymeng\WeChatPay\V3\TransferService($wechatpay_config);
+$client = new \tinymeng\pay\WeChatPay\V3\TransferService($wechatpay_config);
 
 
 $out_batch_no = date("YmdHis").rand(111,999);

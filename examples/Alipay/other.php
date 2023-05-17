@@ -8,7 +8,7 @@ require __DIR__.'/../vendor/autoload.php';
 @header('Content-Type: text/html; charset=UTF-8');
 
 $alipay_config = require('config.php');
-$aop = new \tinymeng\Alipay\AlipayService($alipay_config);
+$aop = new \tinymeng\pay\Alipay\AlipayService($alipay_config);
 
 //接口名称
 $apiName = 'ant.merchant.expand.indirect.zft.consult';

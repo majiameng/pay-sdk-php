@@ -21,9 +21,7 @@
 composer require tinymeng/pay-sdk -vvv
 ```
 
-> 类库使用的命名空间为`\\tinymeng\\Alipay`
-> 类库使用的命名空间为`\\tinymeng\\WeChatPay`
-> 类库使用的命名空间为`\\tinymeng\\QQPay`
+> 类库使用的命名空间为`\tinymeng\pay`
 
 
 ### 支付宝支付

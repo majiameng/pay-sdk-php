@@ -23,7 +23,7 @@ $params = [
 ];
 //发起请求
 try {
-    $client = new \tinymeng\WeChatPay\V3\BaseService($wechatpay_config);
+    $client = new \tinymeng\pay\WeChatPay\V3\BaseService($wechatpay_config);
     $result = $client->execute('POST', '/v3/payscore/serviceorder', $params);
     print_r($result);
 } catch (Exception $e) {
@@ -38,7 +38,7 @@ $file_path = dirname(__FILE__).'/pic.png'; //文件路径
 $file_name = 'pic.png'; //文件名称
 
 try {
-    $client = new \tinymeng\WeChatPay\V3\BaseService($wechatpay_config);
+    $client = new \tinymeng\pay\WeChatPay\V3\BaseService($wechatpay_config);
     $result = $client->upload('/v3/merchant-service/images/upload', $file_path, $file_name);
     echo $result['media_id'];
 } catch (Exception $e) {

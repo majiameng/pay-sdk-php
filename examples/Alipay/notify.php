@@ -6,7 +6,7 @@
 require __DIR__.'/../vendor/autoload.php';
 
 $alipay_config = require('config.php');
-$aop = new \tinymeng\Alipay\AlipayTradeService($alipay_config);
+$aop = new \tinymeng\pay\Alipay\AlipayTradeService($alipay_config);
 
 if($aop->check($_POST)) {//验证成功
     //商户订单号

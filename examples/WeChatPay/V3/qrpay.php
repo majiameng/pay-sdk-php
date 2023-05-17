@@ -26,7 +26,7 @@ $params = [
 
 //发起支付请求
 try {
-    $client = new \tinymeng\WeChatPay\V3\PaymentService($wechatpay_config);
+    $client = new \tinymeng\pay\WeChatPay\V3\PaymentService($wechatpay_config);
     $result = $client->nativePay($params);
     echo '微信支付下单成功！支付二维码链接：'.$result['code_url'];
 } catch (Exception $e) {

@@ -18,7 +18,7 @@ $bizContent = [
 
 //发起支付请求
 try{
-    $aop = new \tinymeng\Alipay\AlipayTradeService($alipay_config);
+    $aop = new \tinymeng\pay\Alipay\AlipayTradeService($alipay_config);
     $result = $aop->refund($bizContent);
     echo '退款成功！退款金额：'.$result['refund_fee'];
 }catch(Exception $e){

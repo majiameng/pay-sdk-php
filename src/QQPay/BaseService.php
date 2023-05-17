@@ -1,6 +1,6 @@
 <?php
 
-namespace tinymeng\QQPay;
+namespace tinymeng\pay\QQPay;
 
 class BaseService
 {
